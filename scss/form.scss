@@ -1,0 +1,61 @@
+.book-form {
+  padding: 30px 30px 38px;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+
+  & fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & legend {
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+
+    padding: 14px 17px; 
+    border: 1px solid #e1e7ed;
+    border-radius: 3px;
+
+    font: inherit;
+  }
+
+  &__input::placeholder {
+    color: #3d4e61;
+  }
+
+  &__input--date {
+    margin-bottom: 16px;
+  }
+
+  &__input--guests {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 3px;
+
+    color: #fff;
+    background-color: #fd5c63;
+    font: inherit;
+
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: #e64c54;
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  border-top: 1px solid #e5e5e5;
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-column-gap: 20px;
+    justify-content: center;
+
+    padding: 44px 15px;
+  }
+
+  &__navigation-title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 16px;
+    font-weight: 700px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    margin: 0;
+    margin-bottom: 13px;
+    padding: 0;
+  }
+
+  &__list-item a {
+    color: #3d4e61;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  &__list-item:hover a {
+    color: #fd5c63;
+  } 
+}

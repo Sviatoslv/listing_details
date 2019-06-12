@@ -1,0 +1,88 @@
+$header-hight: 60px;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 19px 0 26px;
+
+  min-height: $header-hight;
+  font-weight: 700;
+  background-color: #fff;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 30px;
+  }
+
+  &__logo img {
+    width: 100%;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__navigation ul {
+    display: flex;
+    align-items: stretch;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__navigation-item {
+    margin: 0;
+    margin-right: 40px;
+    padding: 0;
+  }
+
+  &__navigation-item--avatar {
+    margin-right: 0;
+    width: 30px;
+  }
+
+  &__navigation-item a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: $header-hight;
+    
+    text-decoration: none;
+    color: #3d4e61;
+  }
+
+  &__navigation-item:not(:last-child) a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #fd5c63;
+
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__navigation-item:hover a {
+    color: #fd5c63;
+  }
+
+  &__navigation-item:not(:last-child):hover a::after {
+    width: 100%;
+  }
+
+  &__user-avatar {
+    width: 100%;
+  }
+
+  &__navigation-item--avatar {
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__navigation-item--avatar:hover {
+    transform: scale(1.08);
+  }
+}

@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #3d4e61;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 19px 0 26px;
+  min-height: 60px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 30px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__navigation {
+  display: flex;
+  align-items: stretch;
+}
+.header__navigation ul {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header__navigation-item {
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+}
+.header__navigation-item--avatar {
+  margin-right: 0;
+  width: 30px;
+}
+.header__navigation-item a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  text-decoration: none;
+  color: #3d4e61;
+}
+.header__navigation-item:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #fd5c63;
+  transition: all 0.4s ease-in-out;
+}
+.header__navigation-item:hover a {
+  color: #fd5c63;
+}
+.header__navigation-item:not(:last-child):hover a::after {
+  width: 100%;
+}
+.header__user-avatar {
+  width: 100%;
+}
+.header__navigation-item--avatar {
+  transition: all 0.4s ease-in-out;
+}
+.header__navigation-item--avatar:hover {
+  transform: scale(1.08);
+}
+
+.main-title {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+}
+.main-title__second-level {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.main--details__content-wrapper {
+  display: grid;
+  grid-template-columns: 480px 330px;
+  grid-column-gap: 90px;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.appartment-photo-wrapper {
+  margin-bottom: 40px;
+}
+
+.appartment-photo {
+  width: 100%;
+  height: 464px;
+  object-fit: cover;
+}
+
+.book-form {
+  padding: 30px 30px 38px;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+.book-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.book-form legend {
+  margin-bottom: 30px;
+}
+.book-form__input {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 14px 17px;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  font: inherit;
+}
+.book-form__input::placeholder {
+  color: #3d4e61;
+}
+.book-form__input--date {
+  margin-bottom: 16px;
+}
+.book-form__input--guests {
+  margin-bottom: 24px;
+}
+.book-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #fd5c63;
+  font: inherit;
+  transition: background-color 0.4s ease-in-out;
+  cursor: pointer;
+}
+.book-form__button:hover {
+  background-color: #e64c54;
+}
+
+.apartment-description {
+  margin-bottom: 22px;
+}
+.apartment-description__entire-apartment caption {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.apartment-description__full-decription-link {
+  color: #687c94;
+  line-height: 19px;
+  text-decoration: none;
+}
+.apartment-description__entire-apartment {
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+.apartment-description__entire-apartment td {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 34px;
+}
+.apartment-description__text {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  line-height: 32px;
+}
+.apartment-description__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #3d4e61;
+  font-weight: 500;
+  margin-bottom: 48px;
+  transition: color 0.3s ease-in-out;
+}
+.apartment-description__link:hover {
+  color: #fd5c63;
+}
+.apartment-description__amenities-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.apartment-description__amenities-list {
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  grid-auto-flow: row;
+  grid-gap: 17px 20px;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+}
+
+.review__section {
+  margin-bottom: 70px;
+}
+.review__information {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 20px;
+}
+.review__photo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+.review__photo {
+  width: 100%;
+  border-radius: 50%;
+}
+.review__name {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: 700px;
+}
+.review__date {
+  font-size: 14px;
+}
+.review__text {
+  margin: 0;
+  padding: 0;
+}
+
+.hoster .main-title__second-level--hoster {
+  margin-bottom: 10px;
+}
+.hoster__subtitle {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.hoster__subtitle a {
+  text-decoration: none;
+  color: #3d4e61;
+}
+.hoster__description {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.hoster__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #118488;
+  border-radius: 4px;
+  color: #118488;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+.hoster__button:hover {
+  border: 1px solid #118488;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #118488;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+}
+.footer__navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-column-gap: 20px;
+  justify-content: center;
+  padding: 44px 15px;
+}
+.footer__navigation-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700px;
+}
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__list-item {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+}
+.footer__list-item a {
+  color: #3d4e61;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__list-item:hover a {
+  color: #fd5c63;
+}
+
+/*# sourceMappingURL=style.css.map */
