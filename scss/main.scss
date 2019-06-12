@@ -1,0 +1,29 @@
+.main {
+  &-title {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+  }
+  
+  &-title__second-level {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.main--details {
+  &__content-wrapper {
+    display: grid;
+    grid-template-columns: 480px 330px;
+    grid-column-gap: 90px;
+    justify-content: center;
+
+    margin-bottom: 75px;
+  }
+}
